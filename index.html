@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="C:\Users\uzair\Downloads\galaxies.jpg" alt="galaxies" height="300" width="300" class="gallery-img" onclick="openLightbox(); currentSlide(1)">
+        </div>
+        <div class="gallery-item">
+            <img src="C:\Users\uzair\Downloads\abstractcar.jpg" alt="abstractcar" height="300" width="300" class="gallery-img" onclick="openLightbox(); currentSlide(2)">
+        </div>
+        <div class="gallery-item">
+            <img src="C:\Users\uzair\Downloads\cat.jpg" alt="cat" height="300" width="300" class="gallery-img" onclick="openLightbox(); currentSlide(3)">
+        </div>
+        <div class="gallery-item">
+            <img src="C:\Users\uzair\Downloads\lamborghini.jpg" alt="lamborghini" height="300" width="300" class="gallery-img" onclick="openLightbox(); currentSlide(4)">
+        </div>
+        <div class="gallery-item">
+            <img src="C:\Users\uzair\Downloads\world.png" alt="world" height="300" width="300" class="gallery-img" onclick="openLightbox(); currentSlide(5)">
+        </div>
+        <div class="gallery-item">
+            <img src="C:\Users\uzair\Downloads\work.png" alt="work" height="300" width="300" class="gallery-img" onclick="openLightbox(); currentSlide(6)">
+        </div>
+        <div class="gallery-item">
+            <img src="C:\Users\uzair\Downloads\abstract.jpg" alt="abstract" height="300" width="300" class="gallery-img" onclick="openLightbox(); currentSlide(7)">
+        </div>
+        <div class="gallery-item">
+            <img src="C:\Users\uzair\Downloads\beach.jpg" alt="beach" height="300" width="300" class="gallery-img" onclick="openLightbox(); currentSlide(8)">
+        </div>
+        <!-- Add more images as needed -->
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close cursor" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content">
+            <div class="lightbox-slide">
+                <img src="C:\Users\uzair\Downloads\galaxies.jpg" alt="Image 1" class="lightbox-img">
+            </div>
+            <div class="lightbox-slide">
+                <img src="C:\Users\uzair\Downloads\abstractcar.jpg" alt="Image 2" class="lightbox-img">
+            </div>
+            <div class="lightbox-slide">
+                <img src="C:\Users\uzair\Downloads\cat.jpg" alt="Image 3" class="lightbox-img">
+            </div>
+            <div class="lightbox-slide">
+                <img src="C:\Users\uzair\Downloads\abstract.jpg" alt="Image 4" class="lightbox-img">
+            </div>
+            <div class="lightbox-slide">
+                <img src="C:\Users\uzair\Downloads\lamborghini.jpg" alt="Image 5" class="lightbox-img">
+            </div>
+            
+            <!-- Add more slides as needed -->
+
+            <!-- Next/prev buttons -->
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
